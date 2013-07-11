@@ -39,6 +39,27 @@ Packet ID   | Field Name     | Field Type | Example   | Notes
 0x03        | 
 Total Size: | 4 bytes
 
+Unknown (0x04)
+-----------------
+*Unknown*
+
+
+Packet ID   | Field Name     | Field Type | Example    | Notes
+------------|----------------|------------|------------|----------------------------
+0x04        | ??
+Total Size: | ?? bytes
+
+Unknown (0x05)
+-----------------
+*Unknown*
+
+
+Packet ID   | Field Name     | Field Type | Example    | Notes
+------------|----------------|------------|------------|----------------------------
+0x05        | Unknown        | int32?     | 0          | Unknown
+            | Unknown        | uint32?    | 0xA0B46A04 | 0xA0B46A04 was spotted
+Total Size: | 12 bytes
+
 Unknown (0x10)
 -----------------
 *Unknown*
