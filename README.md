@@ -18,17 +18,14 @@ byte array | { 1, 2, 3}  | A byte array, zlib compressed prefixed with its compr
 
 Each packet is prefixed with a unique packet id (int32).
 
-Unknown (0x11)
+Unknown (0x02)
 -----------------
 *Unknown*
 
-Is sent by the client on login
-
-
-Packet ID   | Field Name     | Field Type | Example   | Notes
-------------|----------------|------------|-----------|----------------------------
-0x11        | Client Version | int32      | 3         | Current Client Version: 3
-Total Size: | 8 bytes
+Packet ID   | Field Name  | Field Type | Example   | Notes
+------------|-------------|------------|-----------|----------------------------
+0x02        | Empty?
+Total Size: | 4 bytes
 
 Unknown Client Version (0x03)
 -----------------
@@ -53,6 +50,19 @@ Packet ID   | Field Name  | Field Type | Example   | Notes
 ------------|-------------|------------|-----------|----------------------------
 0x10        | Seems to be always 4464 bytes (+ id)
 Total Size: | 4468 bytes
+
+Unknown (0x11)
+-----------------
+*Unknown*
+
+Is sent by the client on login
+
+
+Packet ID   | Field Name     | Field Type | Example   | Notes
+------------|----------------|------------|-----------|----------------------------
+0x11        | Client Version | int32      | 3         | Current Client Version: 3
+Total Size: | 8 bytes
+
 
 World Seed (0x0F)
 -----------------
