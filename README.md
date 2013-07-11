@@ -53,3 +53,12 @@ Packet ID   | Field Name  | Field Type | Example   | Notes
 ------------|-------------|------------|-----------|----------------------------
 0x10        | Seems to be always 4464 bytes (+ id)
 Total Size: | 4468 bytes
+
+World Seed (0x0F)
+-----------------
+*Unknown*
+
+Packet ID   | Field Name  | Field Type | Example   | Notes
+------------|-------------|------------|-----------|----------------------------
+0x0F        | Seed        | int32      | 26879     | The Seed specified in server.cfg
+Total Size: | 8 bytes
